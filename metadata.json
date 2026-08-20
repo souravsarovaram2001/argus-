@@ -1,0 +1,6 @@
+{
+  "name": "ARGUS - Geopolitical Risk Intelligence for Tourism",
+  "description": "Proactive geopolitical risk intelligence platform converting fragmented global signals into tourism-specific 0-10 risk scores and actionable operational recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
