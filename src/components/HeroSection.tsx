@@ -38,7 +38,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3.5 py-1.5 rounded-full text-blue-400 text-xs font-semibold">
             <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
             <span className="tracking-wide uppercase font-mono">
-              FORMERLY GEOSHIELD
+              ENTERPRISE RISK INTELLIGENCE
             </span>
             <span className="text-slate-600 font-mono">•</span>
             <span className="text-slate-300 font-normal">

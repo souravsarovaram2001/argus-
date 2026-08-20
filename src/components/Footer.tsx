@@ -178,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Bar: Copyright & Contact */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-slate-400">
           <div>
-            © {new Date().getFullYear()} ARGUS Intelligence Technologies. All rights reserved. Formerly GeoShield.
+            © {new Date().getFullYear()} ARGUS Intelligence Technologies. All rights reserved.
           </div>
 
           <div className="flex items-center space-x-6">

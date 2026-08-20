@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </span>
               </div>
               <p className="text-[10px] text-slate-400 tracking-tight hidden sm:block">
-                Formerly GeoShield • Tourism Operations
+                Geopolitical Intelligence • Tourism Operations
               </p>
             </div>
           </div>

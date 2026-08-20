@@ -37,7 +37,7 @@ export const AboutUsSection: React.FC<AboutUsSectionProps> = ({
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-            ARGUS (formerly GeoShield) was created to bridge the dangerous chasm between abstract diplomatic foreign advisories and real-world commercial tourism logistics. We believe travel companies should never have to gamble on fragmented news when lives and multimillion-dollar tour programs are on the line.
+            ARGUS was created to bridge the dangerous chasm between abstract diplomatic foreign advisories and real-world commercial tourism logistics. We believe travel companies should never have to gamble on fragmented news when lives and multimillion-dollar tour programs are on the line.
           </p>
         </div>
 
