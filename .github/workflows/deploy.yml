@@ -2,38 +2,36 @@ name: Deploy Vite To GitHub Pages
 
 on:
   push:
-    branches: [ 'main' ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build
         run: npm run build
 
-      - name: Upload production-ready build files
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: production-files
-          path: ./dist
+          name: github-pages
+          path: dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write
@@ -44,16 +42,16 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: production-files
-          path: ./dist
+          name: github-pages
+          path: dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact to GitHub Pages
+      - name: Upload artifact to Pages
         uses: actions/upload-artifact@pages
         with:
-          path: ./dist
+          path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment
